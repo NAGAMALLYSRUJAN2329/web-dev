@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animations</title>
+    <style>
+        #container {
+            display: flex;
+            justify-content: center;
+        }
+
+        .ani {
+            background-color: blue;
+            color: black;
+            animation-name: sru;
+            animation-duration: 5s;
+            animation-iteration-count: 1;
+            height: 100px;
+            box-shadow: 5px 5px red;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-fill-mode: forwards;
+            transition-property: all;
+            transition-duration: 1s;
+
+
+            /* text-align: center; */
+        }
+
+        .ani:hover {
+            color: white;
+            background-color: brown;
+            border-radius: 5px;
+            box-shadow: 5px 5px black;
+            transform: rotate(45deg);
+            transform: translate(100px);
+
+        }
+        .fixed{
+            position: absolute;
+            top: 125px;
+            left: 150px;
+            text-align: center;
+            background-color: aqua;
+            display: inline-block;
+            font-size: large;
+            /* font-weight: bold; */
+
+        }
+        /* .flex{
+            display: flex;
+            justify-content: ;
+        } */
+        @keyframes sru {
+            from {
+                width: 250px;
+                height: 20px;
+            }
+
+            to {
+                width: 400px;
+                height: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="ani">
+            <h4 class="flex">Hi, this is animation and transition</h4>
+        </div>
+    </div>
+    <div class="fixed">
+        time <span id="t"> this is the time</span>
+    </div>
+    <script>
+        // console.log("HI, this is my");
+        // let a=1;
+        // let now=new Date;
+        // console.log(now);
+        setInterval(updatetime,1000);
+        // let t=document.getElementsByClassName('t')
+        // console.log(time);
+        function updatetime(){
+            t.innerHTML=new Date();
+        }
+        // let cont=document.getElementById('container')
+        // console.log(cont);
+        // let con=document.getElementsByClassName('fixed')
+        // console.log(con);
+        // alert("hi");
+        function greet(){
+            console.log("good morning")
+        }
+
+    </script>
+
+</body>
+
+</html>

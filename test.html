@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>practice</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com"> -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Anybody:wght@500&display=swap" rel="stylesheet"> -->
+    <style>
+        .para {
+            background-color: rgb(45, 238, 164);
+            color: blue;
+            font-family: 'Anybody', cursive;
+            margin: 8px;
+            padding: 4px;
+        }
+
+        #heading {
+            text-align: center;
+            color: brown;
+        }
+
+        .app {
+            background-color: aqua;
+            /* height: 100px;
+            width: 100px; */
+            border: 2px solid red;
+            border-radius: 5px;
+            margin: 5px;
+        }
+
+        #image {
+            height: 82px;
+            width: 82px;
+            margin: 2px;
+            float: left;
+        }
+
+        #image1 {
+            height: 82px;
+            width: 82px;
+            margin: 2px;
+            float: right;
+        }
+
+        .position {
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            background-color: rgb(10, 248, 169);
+            text-align: center;
+            float: left;
+        }
+
+        #box3 {
+            /* position: relative;
+            top: 25px;
+            left: 25px; */
+            position: sticky;
+            top: 300px;
+            left: 25px;
+
+        }
+
+        .clear {
+            clear: left;
+        }
+
+        #stu {
+            text-decoration: none;
+            background-color: aquamarine;
+            border-radius: 30px;
+            border: 2px solid green;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        #btn {
+            border-radius: 30px;
+            border: 2px solid green;
+            margin: 5px;
+            padding: 3px;
+        }
+
+        #btn:hover,
+        #stu:hover {
+            cursor: pointer;
+            background-color: rgb(0, 104, 69);
+            color: rgb(0, 0, 0);
+        }
+
+        #img {
+            height: 81px;
+            width: 81px;
+            /* display: block; */
+        }
+
+        #header {
+            /* width: 60%; */
+            margin: auto;
+            text-align: center;
+            /* margin: 5px solid black; */
+        }
+
+        #navbar {
+            background-color: black;
+            /* color: white; */
+            border-radius: 30px;
+        }
+
+        #navbar ul {
+            list-style: none;
+            overflow: auto;
+                }
+        #navbar li{
+            float: left;
+            padding: 4px;
+            margin: 5px;
+        }
+
+        #navbar ul a {
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        #search{
+            float: right;
+            padding: 3px;
+            margin: 5px;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="heading">HI!</h1>
+    <p class="para">wonderful</p>
+    <p class="para">second para</p>
+    <div class="app">
+        <img id="image" src="user1.png" alt="">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perferendis incidunt, voluptatum tenetur
+            hic cumque porro reprehenderit laborum non. Qui officia pariatur expedita, nobis fugit consequun nihil
+            excepturi ex ipsa.</p>
+    </div>
+    <div class="app">
+        <img id="image1" src="user1.png" alt="">
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores perferendis incidunt, voluptatum tenetur
+            hic cumque porro reprehenderit laborum non. Qui officia pariatur expedita, nobis fugit consequuntur nihil
+            excepturi ex ipsa.</p>
+    </div>
+    <p>this is HTML</p>
+    <div>
+        <div id="box1" class="position">Lorem ipsum dolor sit</div>
+        <div id="box2" class="position">Lorem ipsum sit amet</div>
+        <div id="box3" class="position">Lorem dolor sit srtu</div>
+        <div id="box4" class="position">Lorem ipsum sit amet</div>
+    </div>
+    <!-- <p class="clear">this is button</p> -->
+    <div class="clear">
+        <a href="" id="stu" class="clear">go to heaven</a>
+        <button id="btn" class="clear">button</button>
+    </div>
+    <header id="header">
+        <img src="user.jpg" alt="" id="img">
+        <h1 id="head">Welcome to my Website</h1>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li class="list"> <a href="">Home</a> </li>
+            <li class="list"> <a href="">About</a> </li>
+            <li class="list"> <a href="">More</a> </li>
+            <li class="list"> <a href="">Contact Us</a> </li>
+            <input type="text" id="search" placeholder="search">
+        </ul>
+        
+    </nav>
+</body>
+
+</html>
